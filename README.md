@@ -103,3 +103,5 @@ whereas the LEDNET unit insists on doing a nice "fade in" or "ramp up" from 0% t
 Controlling something like a DC motor, since any channel output is already PWM, would be much easier. 
 Both modules are affordable and an easy way to add WiFi control options (or an IR remote) to any project, not just LED strips. 
 Besides controlling these from Windows/command-line, the protocol is easy enough to control from a network connected Arduino or RasPi board.
+
+[End of Line]
