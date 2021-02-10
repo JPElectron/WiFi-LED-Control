@@ -1,0 +1,66 @@
+Sold at Costco by DSI...
+Design Solutions International
+800-388-6141 x216
+ITM./ART 962683
+Model 16704
+
+Sold at HomeDepot by Commercial Electric...
+Internet #206273002 | Model # 16508 | Store SKU #1001548528
+https://www.homedepot.com/p/Commercial-Electric-18-ft-LED-Connectible-Indoor-Outdoor-Color-Changing-White-and-RGB-Tape-Light-with-Remote-Control-16508/206273002
+18 ft. LED Connectible Indoor/Outdoor Color Changing (White and RGB) Tape Light with Remote Control
+
+Actually made by...
+Meko
+24VDC 1.0A Max
+Model: MK-002-02-14 RGBD+W-F
+Intertek 4005244
+Xing Yuan Electronics Co. Ltd.
+
+Chip in the strip is: TM1804 (no English datasheet that I could find)
+	each chip controls 6 LEDs in the strip
+     1 section  = 12 LEDs (so 2 chips) with cut points at solder conn.
+              all White / under 0.1Amp draw
+	   2 sections = 24 LEDs @ 24VDC / all White / 0.11-0.12Amp draw
+              (that's about 2.7w @ 24.88v or 2.9w @ 24.94v after WT-AF-24v as PS warms up)
+	   7 sections = Full strip w/ plug conn. @ 24VDC / all White / 0.40Amp draw
+							all Red   / 0.20Amp draw
+							all Green / 0.19Amp draw
+							all Blue  / 0.18Amp draw (note White LED is also on a small percent)
+							RGB (all 3 on) / 0.28Amp draw
+							light Blue / 0.31Amp draw
+							Orange / 0.23Amp draw
+							Yellow / 0.34Amp draw
+							Purple / 0.32Amp draw
+
+To power ONLY white LEDs...
+ +24  <--- use as +
+DATA  n/c
+ WHT  <--- use as -/GND
+ GND  n/c
+
+Same chip as sold in "Pololu" LED strips
+
+They have an Arduino library...
+	https://www.pololu.com/product/2543/resources
+	https://github.com/pololu/pololu-led-strip-arduino
+
+Also supported using FastLED library...
+	http://fastled.io
+
+Nothing I tried would compile on Digispark (due to 16.5Mhz instead of normal 16Mhz?)
+
+Note strip is directional...
+(data feed must come from left end when text is right side up)
+ --> DATA -->
+ +24
+DATA  [ RGB ] [WHT] x5 then [TM1804] then x1 [ RGB ] [WHT] then (black SMT cap or term. resistor)
+ WHT  [ LED ] [LED]         [ CHIP ]         [ LED ] [LED]
+ GND
+
+On the LED strip...
+Female plastic connector is for next strip or END (of two strips max)
+Male plastic connector goes into IR/driver block
+
+Does not light @ 12VDC
+
+[END]

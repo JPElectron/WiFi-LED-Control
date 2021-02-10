@@ -1,0 +1,14 @@
+For module labeled SUPERNIGHT WiFi Wireless LED Smart Controller
+
+71 23 0f a3 on
+71 24 0f a4 off
+
+31 ff 00 00 00 00 0f 3f red only
+31 00 ff 00 00 00 0f 3f green only
+31 00 00 ff 00 00 0f 3f blue only
+
+31 ff ff 01 00 00 0f 3f red and green
+
+31 00 00 00 00 00 0f 40 colors off
+
+[END]
