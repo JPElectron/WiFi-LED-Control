@@ -1,8 +1,6 @@
 # WiFi-LED-Control
 
-Edit: Years after I made this I found the Pixelblaze controller: https://www.bhencke.com/pixelblaze
-
-...and I'd suggest this is for digital LED strips (those with a DATA pin) it provides ALLOT more flexibility than electrically wired plain RGB strips (where the whole strip must change to be the same color) as discussed below...
+EDIT: Years after I made the "documentation" below I found this Pixelblaze controller: https://www.bhencke.com/pixelblaze ...and I'd suggest this for digital LED strips (those with a DATA pin) it provides ALLOT more flexibility than electrically wired plain RGB strips (where the whole strip must change to be the same color) as discussed below...
 
 To understand the differences between digital LED strips (that require DATA) versus those that are just plain RGB see <a href="https://www.youtube.com/watch?v=K4H2y51LKok">this video</a>
 
@@ -10,7 +8,13 @@ A) <a href="https://www.amazon.com/gp/product/B01DY56N8U">LEDENET Smart WiFi LED
 
 B) <a href="https://www.amazon.com/gp/product/B01JZ2SI6Q">SUPERNIGHT WiFi Wireless LED Smart Controller</a><br>
 
-Both use the <a href="http://www.ledmagical.com/Apps/MgcHome/AppDown.aspx">Magic Home WiFi</a> app, or send it data directly on TCP port 5577 (more info on that below)
+Both use the Magic Home WiFi app, or send data directly on TCP port 5577 (more info on that below)
+
+http://www.ledmagical.com/Apps/MgcHome/AppDown.aspx
+
+https://play.google.com/store/apps/details?id=com.Zengge.LEDWifiMagicHome
+
+https://play.google.com/store/apps/details?id=com.zengge.wifi
 
 First the LEDENET unit, I prefer this one for a variety of reasons...
 
