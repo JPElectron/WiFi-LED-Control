@@ -1,8 +1,14 @@
 # WiFi-LED-Control
 
-EDIT: Years after I made the "documentation" below I found this Pixelblaze controller: https://www.bhencke.com/pixelblaze ...and I'd suggest this for digital LED strips (those with a DATA pin) it provides ALLOT more flexibility than electrically wired plain RGB strips (where the whole strip must change to be the same color) as discussed below...
+EDIT: Years after I made this "documentation" I have discovered newer/better LED controllers...
 
-To understand the differences between digital LED strips (that require DATA) versus those that are just plain RGB see <a href="https://www.youtube.com/watch?v=K4H2y51LKok">this video</a>
+Pixelblaze controller: https://www.bhencke.com/pixelblaze
+
+QuinLED-Dig-Uno: https://quinled.info/pre-assembled-quinled-dig-uno/
+
+QuinLED-Dig-Quad:  https://quinled.info/pre-assembled-quinled-dig-quad/
+
+To understand the differences between digital LED strips (that have a DATA pin, and use the LED controllers linked above) versus those that are just plain RGB (using the LED controllers explained below) see <a href="https://www.youtube.com/watch?v=K4H2y51LKok">this video</a>
 
 A) <a href="https://www.amazon.com/gp/product/B01DY56N8U">LEDENET Smart WiFi LED Controller 5 Channels</a>
 
@@ -86,14 +92,14 @@ dependant on some 3rd party IoT service. I don't care for any of that risk or co
 
 Now for the SUPERNIGHT unit, while it certainly works and has the added benefit of an IR remote (incase you lost your smartphone? or don't trust your guests on your WiFi?) here are some things I noticed:
 
-    - when dimming any color LED (or mixing colors) it makes a high-pitched whine that annoys me
-    - no cross-fade when changing colors
-    - it gets VERY warm
-    - there is a solder pad on the board (and the accompanying transistor) marked W, as if there was a 4th channel for White LEDs,
+ - when dimming any color LED (or mixing colors) it makes a high-pitched whine that annoys me
+ - no cross-fade when changing colors
+ - it gets VERY warm
+ - there is a solder pad on the board (and the accompanying transistor) marked W, as if there was a 4th channel for White LEDs,
     but I found no way to turn it on so perhaps this is only enabled in a different model firmware
-    - internal WiFi module is marked ESP-12S
-    - doesn't seem to run any webserver
-    - it still works if you de-solder the IR receiver
+ - internal WiFi module is marked ESP-12S
+ - doesn't seem to run any webserver
+ - it still works if you de-solder the IR receiver
 
 For these reasons I decided to only trust this unit to trigger 3 relays (one attached to each of the R, G, B pins and with a flyback diode to automate a children's toy, it runs cooler in this way.<br>
 
