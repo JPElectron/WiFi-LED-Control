@@ -24,13 +24,13 @@ https://play.google.com/store/apps/details?id=com.zengge.wifi
 
 First the LEDENET unit, I prefer this one for a variety of reasons...
 
-    - completely silent operation even when dimming
-    - nice cross-fade when changing colors  
-    - solid screw terminals for connections
-    - runs cool (advertised as 4Amp switching per channel)
-    - extra 4th and 5th channel intended for Warm White/Cool White LEDs but could also be used for relays, status light, nightlight, or otherwise
-    - internal WiFi module is marked HF-LPB100-1
-    - runs a webserver (u: admin p: nimda)
+ - completely silent operation even when dimming
+ - nice cross-fade when changing colors  
+ - solid screw terminals for connections
+ - runs cool (advertised as 4Amp switching per channel)
+ - extra 4th and 5th channel intended for Warm White/Cool White LEDs but could also be used for relays, status light, nightlight, or otherwise
+ - internal WiFi module is marked HF-LPB100-1
+ - runs a webserver (u: admin p: nimda)
 
 Default IP: 10.10.123.3 (when broadcasting its own wireless SSID and not connected to your own wireless network)
 
